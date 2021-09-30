@@ -1,0 +1,15 @@
+{
+    "name": "AutoCaptcha!",
+    "description": "Automatic Captcha for ONT GPON Chinese based firmware routers.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts":[{ 
+         "matches": ["http://192.168.1.1/admin/login_en.asp"],
+         "js":["content-script.js"]
+    }
+      
+    ],
+    "permissions":[
+        "tabs"
+    ]
+  }
